@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html  ng-app="FirsttApp">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>ex-1</title>
+		<meta name="author" content="OREN" />
+		<!-- Date: 2015-10-30 -->
+
+	</head>
+	<body>
+		
+		<div>
+			אני אוהב : <h3> </h3>
+		</div>
+		<div ng-controller="h3Controller">
+
+			{{ hh }}
+			
+		
+		<form>
+			<select ng-model="hh">
+				<option> Html</option>
+				<option> css</option>
+				<option> Javascript</option>
+				<option> Angular.Js</option>
+</div>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
+				<script>
+					var app=angular.module("FirsttApp",[]);
+
+					app.controller("h3Controller",function($scope){
+					$scope.hh ="ddddd";
+					});
+				</script>
+			</select>
+		</form>
+	</body>
+</html>
+
